@@ -1,16 +1,16 @@
-
 spring:
   application:
-    name: CONFIG-DEFULT
+    name: CONFIG-DEFAULT
 
 eureka:
   instance:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${server.port}
-    hostname: localhost   # Optional: use if Eureka dashboard shows UNKNOWN host
+    hostname: localhost
 
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka/
+
